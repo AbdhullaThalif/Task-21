@@ -23,7 +23,7 @@ public class Task_21_2 {
 		Set<String> windowHandles = driver.getWindowHandles();
 		for (String handle : windowHandles) {
 			if (!handle.equals(mainWindowHandle)) {
-				driver.switchTo().window(handle); // Switch to the pop-up window
+				driver.switchTo().window(handle);
 				break;
 			}
 		}
