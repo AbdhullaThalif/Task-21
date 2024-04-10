@@ -10,11 +10,11 @@ public class Task_21_1 {
  public static void main(String[] args) throws Exception {
 		 
 	      // Launch the ChromeDriver browser
-		  WebDriver driver = new ChromeDriver();
+	      WebDriver driver = new ChromeDriver();
 	      // Navigate to the Herokuapp.com URL
 	      driver.get("https://the-internet.herokuapp.com/iframe");
 	      driver.manage().window().maximize();  
-	      //  Switch to the iframe
+	      // Switch to the iframe
 	      WebElement e = driver.findElement(By.xpath("//*[@id=\"mce_0_ifr\"]"));
 	      driver.switchTo().frame(e);
 	      Thread.sleep(1000);
