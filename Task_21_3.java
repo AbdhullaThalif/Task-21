@@ -64,7 +64,7 @@ public class Task_21_3 {
 		driver.switchTo().defaultContent();
 		WebElement top1 = driver.findElement(By.xpath("//frame[@name='frame-top']"));
 		driver.switchTo().frame(top1);
-		// Confirm the page is frames
+		// Confirm the page title is frames
 		String title1 = driver.getCurrentUrl();
 		System.out.println(title1);
 		if (title1.contains("frames")) {
